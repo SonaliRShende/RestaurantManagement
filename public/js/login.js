@@ -15,15 +15,16 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         });
 
         const result = await response.text();
-        alert(result); // Show pop-up message
+        alert(result); 
         if (response.ok) {
-            window.location.replace('menu.html'); // Redirect to menu
+            window.location.replace('menu.html'); 
         }
     } catch (error) {
         console.error('Error logging in:', error);
         alert('Error logging in. Please try again later.');
     }
 });
+ // Load Navbar
 fetch('navbar.html')
     .then(response => response.text())
     .then(data => {

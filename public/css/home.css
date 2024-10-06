@@ -16,12 +16,12 @@ footer {
 }
 .hero-image {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../jpg/bg.jpg");
-    height: 50vh; /* Set height to a percentage of the viewport height */
+    height: 50vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
-   /* margin-top: 150px;*/
+    margin-top: 150px;
 }
 
 .hero-text {
@@ -70,12 +70,12 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #ff6347; /* Example color */
+    background-color: #ff6347; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .nav-button:hover {
-    background-color: #ff4500; /* Darker shade on hover */
+    background-color: #ff4500; 
 }

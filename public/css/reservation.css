@@ -13,23 +13,23 @@ body{
 
 .reservation-form input {
     display: block;
-    margin: 15px auto; /* Increased margin */
-    padding: 15px; /* Increased padding */
-    width: 90%; /* Increased width */
-    max-width: 400px; /* Increased max-width */
-    font-size: 16px; /* Larger font size */
-    border-radius: 8px; /* Rounded corners */
-    border: 1px solid #ccc; /* Border for better appearance */
+    margin: 15px auto; 
+    padding: 15px;
+    width: 90%; 
+    max-width: 400px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
 }
 
 .reservation-form button {
-    padding: 15px 30px; /* Increased button padding */
+    padding: 15px 30px; 
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 18px; /* Larger font size */
-    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; 
+    border-radius: 8px; 
 }
 
 .reservation-form button:hover {

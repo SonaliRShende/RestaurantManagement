@@ -30,17 +30,17 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
     }
 });
 
-// Handle "View Menu" button to open modal
+//View Menu
 document.getElementById('viewMenuBtn').addEventListener('click', function() {
     document.getElementById('menuModal').style.display = 'block';
 });
 
-// Close the modal when the close button is clicked
+// Close menu
 document.querySelector('.close-btn').addEventListener('click', function() {
     document.getElementById('menuModal').style.display = 'none';
 });
 
-// Fetch and insert the navbar
+// load navbar
 fetch('navbar.html')
     .then(response => response.text())
     .then(data => {

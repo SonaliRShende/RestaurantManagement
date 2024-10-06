@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
         await newUser.save();
         res.status(201).send('Logged in successfully');
     } catch (error) {
-        if (error.code === 11000) { // Duplicate phone number
+        if (error.code === 11000) { 
             return res.status(400).send('Phone number already exists');
         }
         res.status(500).send('Failed to log in');

@@ -28,6 +28,7 @@ document.getElementById('reservationForm').addEventListener('submit', async func
         alert('Reservation failed. Please try again later.');
     }
 });
+//load navbar
 fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
