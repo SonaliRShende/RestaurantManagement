@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+        
+    <div class="hero-image">
+        <div class="hero-text">
+        <h1 style="font-size:50px">Maitri</h1>
+        <p>Experience the best meals with us</p>
+        <a href="../order.html" class="order-button"> 
+            <button>Order Now</button>
+        </a>
+    </div>
+
+  
+    <footer>
+        &copy;  Maitri
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        });
+    </script>
+
+</body>
+</html>

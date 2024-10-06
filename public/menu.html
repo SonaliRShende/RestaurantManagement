@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Menu Section -->
+    <div class="menu-section">
+        <h1>Our Special Dishes</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="../jpg/misal.jpg" alt="Dish 1">
+                <h3>Misal</h3>
+                <h4>Rs.90/-</h4>
+            </div>
+            <div class="menu-item">
+                <img src="../jpg/dosa.jpeg" alt="Dish 2">
+                <h3>Dosa</h3>
+                <h4>Rs.80/-</h4>
+            </div>
+            <div class="menu-item">
+                <img src="../jpg/thali.jpg" alt="Dish 3">
+                <h3>Thali</h3>
+                <h4>Rs.150/-</h4>
+            </div>
+        </div>
+
+        <!-- Button to Open Modal -->
+        <button id="openModalBtn" class="see-menu-btn">See Entire Menu</button>
+        <a href="../order.html" class="order-button"> 
+            <button class="order-btn">Order Now</button>
+        </a>
+        <!-- Modal -->
+        <div id="menuModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <embed src="../jpg/menu.pdf" type="application/pdf" class="menu-pdf">
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

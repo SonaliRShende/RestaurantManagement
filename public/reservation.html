@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+
+    <div class="reservation-form">
+        <h1>Book a Table</h1>
+        <form id="reservationForm" action="/backend/routes/reservationRoute.js" method="post">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="contactNumber" placeholder="Contact Number" required>
+            <input type="number" id="numPersons" placeholder="Number of Persons" required>
+            <input type="date" id="reservationDate" required>
+            <input type="time" id="reservationTime" required>
+            <button type="submit">Reserve Table</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMessage" style="display:none; color:green;">
+            Reservation Successful!
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/reservation.js"></script>
+</body>
+</html>

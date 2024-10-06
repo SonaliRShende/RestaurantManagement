@@ -1,0 +1,81 @@
+
+.content {
+    margin-top: 70px; 
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+}
+.hero-image {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../jpg/bg.jpg");
+    height: 50vh; /* Set height to a percentage of the viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+   /* margin-top: 150px;*/
+}
+
+.hero-text {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+   
+}
+
+.hero-text h1 {
+    font-size: 100px;
+    font-family:cursive;
+    text-shadow: 5px 5px 10px #de7541;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 15px; 
+    margin-top: 10px; 
+}
+
+
+.hero-text button {
+    border: none;
+    padding: 10px 20px;
+    margin:10px -10px; 
+    color: black;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+.navigation-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ff6347; /* Example color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}

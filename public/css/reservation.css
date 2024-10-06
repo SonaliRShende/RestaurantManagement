@@ -1,0 +1,37 @@
+body{
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../jpg/reservation.jpg') ;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 150px;
+    color: white;
+}
+.reservation-form {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.reservation-form input {
+    display: block;
+    margin: 15px auto; /* Increased margin */
+    padding: 15px; /* Increased padding */
+    width: 90%; /* Increased width */
+    max-width: 400px; /* Increased max-width */
+    font-size: 16px; /* Larger font size */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for better appearance */
+}
+
+.reservation-form button {
+    padding: 15px 30px; /* Increased button padding */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.reservation-form button:hover {
+    background-color: #218838;
+}

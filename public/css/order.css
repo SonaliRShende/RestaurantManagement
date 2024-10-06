@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 10pc;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../jpg/order.jpeg') ;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.order-form-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(23, 23, 23, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.order-form-container h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border: 1px solid #28a745;
+    outline: none;
+}
+
+.dish-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dish-container label {
+    flex-basis: 30%;
+    margin-right: 10px;
+}
+
+.dish-container input[type="text"],
+.dish-container input[type="number"] {
+    flex-basis: 35%;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.view-menu-btn {
+    background-color: #007bff;
+}
+
+.view-menu-btn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Make it overlay the form */
+    z-index: 2; /* Higher than form's z-index */
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%); /* Center the modal */
+    width: 60%; /* Adjust width for smaller modal */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Limit modal height */
+    overflow-y: auto; /* Scrollable content */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-pdf {
+    width: 100%;
+    height: 500px;
+}
+

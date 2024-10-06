@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <div class="order-form-container">
+            <h1>Place Your Order</h1>
+            <form id="orderForm" action="/backend/routes/orderRoute.js" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <br>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+                <!-- Dish Selection -->
+                <div class="dish-container">
+                    <label for="dish1">Dish 1</label>
+                    <input type="text" id="dish1" name="dish1" placeholder="Enter dish name" required>
+                    <input type="number" id="quantity1" name="quantity1" min="1" placeholder="Qty" required>
+                </div>
+
+                <div class="dish-container">
+                    <label for="dish2">Dish 2</label>
+                    <input type="text" id="dish2" name="dish2" placeholder="Enter dish name">
+                    <input type="number" id="quantity2" name="quantity2" min="1" placeholder="Qty">
+                </div>
+
+                <div class="dish-container">
+                    <label for="dish3">Dish 3</label>
+                    <input type="text" id="dish3" name="dish3" placeholder="Enter dish name">
+                    <input type="number" id="quantity3" name="quantity3" min="1" placeholder="Qty">
+                </div>
+
+                <div class="dish-container">
+                    <label for="dish4">Dish 4</label>
+                    <input type="text" id="dish4" name="dish4" placeholder="Enter dish name">
+                    <input type="number" id="quantity4" name="quantity4" min="1" placeholder="Qty">
+                </div>
+
+                <!-- Menu Button (won't submit the form) -->
+                <button id="viewMenuBtn" type="button" class="view-menu-btn">View Menu</button>
+                <button type="submit">Place Order</button>
+            </form>
+
+            <div class="message" id="orderMessage"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Viewing Menu -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <embed src="../jpg/menu.pdf" type="application/pdf" class="menu-pdf" />
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>
