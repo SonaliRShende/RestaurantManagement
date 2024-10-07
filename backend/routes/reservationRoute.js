@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Reservation } = require('../models/ReservationModel');
+const  Reservation  = require('../models/ReservationModel');
 
 router.post('/', async (req, res) => {
     const { name, contactNumber, numPersons, reservationDate, reservationTime } = req.body;
