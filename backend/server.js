@@ -11,7 +11,7 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static('frontend'));
 app.use(bodyParser.json());
 
 // Routes
@@ -19,11 +19,11 @@ app.use('/api/login', loginRoute);
 app.use('/api/order', orderRoute);
 app.use('/api/reservation', reservationRoute);
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
-app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public', 'login.html')));
-app.get('/menu', (req, res) => res.sendFile(path.join(__dirname, 'public', 'menu.html')));
-app.get('/order', (req, res) => res.sendFile(path.join(__dirname, 'public', 'order.html')));
-app.get('/reservation', (req, res) => res.sendFile(path.join(__dirname, 'public', 'reservation.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'index.html')));
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'login.html')));
+app.get('/menu', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'menu.html')));
+app.get('/order', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'order.html')));
+app.get('/reservation', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'reservation.html')));
 
 
 // Start server
