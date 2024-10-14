@@ -102,7 +102,9 @@ button:hover {
     text-align: center;
     color: #ffffff;
 }
-
+.orderMessage{
+    color: white;
+}
 .modal {
     display: none;
     position: absolute; 
