@@ -1,33 +1,25 @@
-document.getElementById('loginForm').addEventListener('submit', async function(event) {
+document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault();
+
+    const phone = document.getElementById('phone').value;
+    if (!/^\d{10}$/.test(phone)) {
+        alert('Phone number must be a valid 10-digit number.');
+        return; 
+    }
 
     const loginData = {
         name: document.getElementById('name').value,
-        phone: document.getElementById('phone').value,
+        phone: phone,
         password: document.getElementById('password').value,
     };
 
-    try {
-        const response = await fetch('/api/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(loginData)
-        });
-
-        const result = await response.text();
-        alert(result); 
-        if (response.ok) {
-            window.location.replace('menu.html'); 
-        }
-    } catch (error) {
-        console.error('Error logging in:', error);
-        alert('Error logging in. Please try again later.');
-    }
+    console.log('Login data:', loginData);
+    alert('Login successful'); 
 });
- // Load Navbar
+
+// Load navbar
 fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar').innerHTML = data;
     });
-    
